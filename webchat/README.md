@@ -1,43 +1,34 @@
-# epic_chat_application
+# Chat-App
+This project is a basic chat application developed by me and my friends.We use XAMPP because XAMPP provides the Apache web server and MySQL database. Also provided is PhpMyadmin which gives a GUI tool for managing your MySQL databases.
+A WebSocket is a persistent connection between a client and server so we decided to use websocket.
+You can change theme and password.Also you can delete your account.And you can see changes in database.
 
-Sadece websocketi çalıştırmak için :
-Linuxta :
-
+To Use Websocket:
 - php -q php-socket.php
 - php -S 0.0.0.0:8000 index2.php
 
-İlk komuttaki parameter quite anlamına gelir ve php socketi sessiz şekilde çalıştırır. İlk komuttan sonra terminaliniz donmuş gibi olacak o yüzden ya 2. bir 
-terminal kullanın ya da php -q php-socket.php& yazın. & işareti arka planda çalışmasını sağlar.
+The parameter in the first command means quite and php runs the socket silently.Your terminal will be frozen after the first command, so either a second command
+use terminal or type php -q php-socket.php&. The & sign makes it run in the background.
 
-İkinci komut 8000 portunda index2.php yi çalıştırmanızı sağlar.
+The second command allows you to run index2.php on port 8000.
 
-## Yapılacaklar
+### index.php
+![image](https://user-images.githubusercontent.com/81179702/124590670-15df8c80-de64-11eb-91c4-77374cb9b3f3.png)
 
-- is typing karşı taraf için de gözükmeli. (YUNUS)
-- Websocket ve login sayfası birleştirilecekti onu yaptım ama kullanıcının ilk başta verdiğim komutları elle girmesi gerekiyor. Ama elle girmesini istemiyoruz o
-yüzden arka planda o komutları çalıştıracak bir şey yazılmalı (HAKAN)
-- Database'e yeni columns eklemek (cookie, time, kim, kimden, mesaj uzunluğu vb.). (ANYONE)
+### Tables are posts and signup.
+![image](https://user-images.githubusercontent.com/81179702/124589242-6f46bc00-de62-11eb-9c1f-6e1cde79304f.png)
 
-## Yapılsa iyi olur
+### Chat Example 
+![image](https://user-images.githubusercontent.com/81179702/124590443-d1ec8780-de63-11eb-8cad-398bb28ff357.png)
 
-- Login tuşuna basınca da direkt giriş yapıyor. Login olmadan giriş yapmasın. (ANYONE)
-- Logine basmadan direkt chate linkten de geçebiliyor. (ANYONE)
-- Anlık kaç kullanıcı aktif (ANYONE)
-- Şifre ve kullanıcı adı uzunluğuna sınır (ANYONE)
-- Databasede şifreyi hash ile tutmak (ANYONE)
-- Emoji (ANYONE)
-- Mesajları şifrele (ANYONE)
-- File Upload
+### Datase in posts table
+![image](https://user-images.githubusercontent.com/81179702/124589809-1297d100-de63-11eb-964e-6a1643e25b4c.png)
 
 
-## Yapılanlar
 
-- Login & Register pages.
-- Register sayfasında logine yönlendirme butonu da olsun
-- Websocket
-- Daha insancıl css
-- Chat ekranında tekrar name girme kısmı kaldırılacak
-- Database bağlantısı
-- dosya isimleri karmaşık oldu el atmak lazım
-- is typing yazısında $name de olacak.
+
+
+
+
+
 
